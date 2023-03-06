@@ -19,15 +19,6 @@ const theme = createTheme({
       main: Colors.black,
       light: Colors.white,
     },
-    success: {
-      main: Colors.success,
-    },
-    error: {
-      main: Colors.error,
-    },
-    warning: {
-      main: Colors.warning,
-    },
   },
   shadows: {
     0: "",
@@ -127,25 +118,25 @@ theme.components = {
         fontFamily: ThemeFontFamily,
         fontWeight: "bold",
         ...(ownerState.variant === "contained" && {
-          backgroundColor: Colors.accent,
-          color: theme.palette.primary.contrastText,
-          border: `2px solid ${Colors.accent}`,
+          backgroundColor: Colors.primary,
+          color: Colors.white,
+          border: `2px solid ${Colors.primary}`,
           "&:hover": {
             backgroundColor: Colors.primary,
             border: `2px solid ${Colors.primary}`,
           },
         }),
         ...(ownerState.variant === "outlined" && {
-          border: `2px solid ${Colors.accent}`,
+          border: `2px solid ${Colors.primary}`,
           "&:hover": {
-            backgroundColor: Colors.accent,
-            color: theme.palette.primary.contrastText,
-            border: `2px solid ${Colors.accent}`,
+            backgroundColor: Colors.primary,
+            color: Colors.white,
+            border: `2px solid ${Colors.primary}`,
           },
         }),
         ...(ownerState.disabled && {
           backgroundColor: `${Colors.greyMed} !important`,
-          color: Colors.greyDark,
+          color: Colors.white,
           border: `2px solid ${Colors.greyMed} !important`,
         }),
       }),
@@ -191,7 +182,6 @@ theme.components = {
         },
         " &.Mui-selected": {
           backgroundColor: "initial",
-
           " &:before": {
             display: "block",
           },
@@ -213,26 +203,10 @@ theme.components = {
       },
     },
   },
-  MuiTextField: {
-    styleOverrides: {
-      root: {
-        fontFamily: ThemeFontFamily,
-      },
-    },
-  },
   MuiMenuItem: {
     styleOverrides: {
       root: {
         fontFamily: ThemeFontFamily,
-      },
-    },
-  },
-  MuiTabs: {
-    styleOverrides: {
-      root: {
-        ".MuiTabs-indicator": {
-          backgroundColor: Colors.accent,
-        },
       },
     },
   },

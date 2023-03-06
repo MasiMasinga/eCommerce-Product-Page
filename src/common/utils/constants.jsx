@@ -1,6 +1,9 @@
 export const Colors = {
-  primary: "#03132C",
-  secondary: "#00EF5E",
+  primary: "#FF7D1A",
+  secondary: "#FFEEE0",
+  darkBlue: "#1D2025",
+  darkGrayBlue: "#68707D",
+  lightGrayBlue: "#F7F8FD",
   red: "#D42E2E",
   black: "#1F1F1F",
   grey: "#9CA3AE",
@@ -8,10 +11,5 @@ export const Colors = {
   white: "#FFFFFF",
   header: "#000000",
   body: "#9396A5",
-  greyMed: "#D8DAE3",
-  greyDark: "#9396A5",
-  success: "#006043",
-  error: "#E8596D",
-  warning: "#FFB100",
   shadow: "0 6px 20px rgba(0 0 0/ 0.1)",
 };
