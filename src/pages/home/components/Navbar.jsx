@@ -6,6 +6,7 @@ import Stack from "@mui/material/Stack";
 import IconButton from "@mui/material/IconButton";
 import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
+import Divider from "@mui/material/Divider";
 
 // Mui Icons
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
@@ -21,6 +22,7 @@ const LogoComponent = styled("img")({
   height: 30,
   width: "100%",
   paddingRight: 30,
+  cursor: "pointer",
 });
 
 const Navbar = () => {
@@ -30,25 +32,35 @@ const Navbar = () => {
         direction="row"
         justifyContent="space-between"
         spacing={3}
-        sx={{ px: 25 }}
+        sx={{ px: 25, py: 3 }}
       >
         <Stack direction="row" alignItems="center">
           <LogoComponent src={Logo} />
           <Stack direction="row" alignItems="center" spacing={3}>
             <Link href="#" underline="none">
-              <Typography variant="body1">Collections</Typography>
+              <Typography variant="body1" color={Colors.darkGrayBlue}>
+                Collections
+              </Typography>
             </Link>
             <Link href="#" underline="none">
-              <Typography variant="body1">Men</Typography>
+              <Typography variant="body1" color={Colors.darkGrayBlue}>
+                Men
+              </Typography>
             </Link>
             <Link href="#" underline="none">
-              <Typography variant="body1">Women</Typography>
+              <Typography variant="body1" color={Colors.darkGrayBlue}>
+                Women
+              </Typography>
             </Link>
             <Link href="#" underline="none">
-              <Typography variant="body1">About</Typography>
+              <Typography variant="body1" color={Colors.darkGrayBlue}>
+                About
+              </Typography>
             </Link>
             <Link href="#" underline="none">
-              <Typography variant="body1">Contact</Typography>
+              <Typography variant="body1" color={Colors.darkGrayBlue}>
+                Contact
+              </Typography>
             </Link>
           </Stack>
         </Stack>
@@ -60,6 +72,9 @@ const Navbar = () => {
             <AccountCircleIcon fontSize="large" sx={{ color: Colors.black }} />
           </IconButton>
         </Stack>
+      </Stack>
+      <Stack sx={{ px: 20 }}>
+        <Divider />
       </Stack>
     </Stack>
   );
